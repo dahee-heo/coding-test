@@ -1,0 +1,21 @@
+<script>
+// https://programmers.co.kr/learn/courses/30/lessons/86051?language=javascript
+// 없는 숫자 더하기
+const resolve = function(numbers) {
+  // console.log(numbers);
+  let total = 0;
+  for (let i = 0; i <= 9; i++) {
+    console.log(i, numbers.indexOf(i))
+    if (numbers.indexOf(i) === -1) {
+      // console.error(i);
+      total += i;
+    }
+  }
+  // console.warn(total);
+  return total;
+}
+
+const result = resolve([1,2,3,4,6,7,8,0]);
+const result2 = resolve([5,8,4,0,6,7,9]);
+
+</script>
